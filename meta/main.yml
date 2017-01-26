@@ -1,10 +1,7 @@
 ---
 
 dependencies:
-  - role: 
-      name: audit-hardening
-      src: git+https://github.com/KEAOSolutions/ansible-audit-hardening
-      version: 285a065692a3e294ee90a08eab1a8e92e417df32
+  - role: audit-hardening,git+https://github.com/KEAOSolutions/ansible-audit-hardening,285a065692a3e294ee90a08eab1a8e92e417df32
   - role: git+https://github.com/KEAOSolutions/ansible-os-hardening,b8926a5b9b45b1944450d922d7091cbecfd22970,os-hardening
   - role: git+https://github.com/KEAOSolutions/ansible-ssh-hardening,ec5d59269059373c9e001c5cccbd8a2d3fa06bea,ssh-hardening
   - role: git+https://github.com/KEAOSolutions/ansible-docker,0ee5b7707cbe814541524a3cd22730c318080633,docker
