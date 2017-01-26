@@ -9,6 +9,8 @@ dependencies:
   - role: git+https://github.com/KEAOSolutions/ansible-role-firewall,19f7754b90db7b4018ae63d8fbbec48934bcb818,iptables
   - role: git+https://github.com/KEAOSolutions/ansible-grub_cmdline,00b8874bd5131a4eee3b30da1fdb028445607e07,grub-cmdline
   - role: git+https://github.com/UKHomeOffice/ansible-role-sublime,3726595cc83231ccc06da4515911ecd4f533b609,sublime
+  - role: git+https://github.com/UKHomeOffice/ansible-role-minikube,a28bd785de4a6c3ebade35e7835fd0b04f5142c1,minikube
+  - role: git+https://github.com/UKHomeOffice/ansible-role-kubectl,336642ef7aa628b2e60d0b13a45e0dc9b96963c9,kubectl
   - role: git+https://github.com/KEAOSolutions/ansible-role-clamav,b13b993a15801c660c24018d8b26183a9c84c221,clamav
   - role: git+https://github.com/KEAOSolutions/ansible-fstab.git,c1157ba82915a8937107db6d9ba3ae216ae3cf6d,fstab
   - role: git+https://github.com/KEAOSolutions/ansible-role-openjdk,80369365d8fa10066cbe6dc57b0156d1c58ba877,openjdk
