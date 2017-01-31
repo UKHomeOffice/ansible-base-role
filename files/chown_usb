@@ -14,7 +14,7 @@ echo "Changing Ownership on /media/${USER}/${USBDISK} for user: ${USER}"
 
 if [[ -d "${DISK}" ]]
 then
-  cd "${DISK}"
+  cd -P "${DISK}"
   if [[ $(pwd) == ${DISK} ]]
   then
     echo "Changing"
