@@ -3,7 +3,7 @@
 dependencies:
   - role: git+https://github.com/KEAOSolutions/ansible-audit-hardening,285a065692a3e294ee90a08eab1a8e92e417df32,audit-hardening
   - role: git+https://github.com/KEAOSolutions/ansible-os-hardening,b8926a5b9b45b1944450d922d7091cbecfd22970,os-hardening
-  - role: git+https://github.com/KEAOSolutions/ansible-ssh-hardening,ec5d59269059373c9e001c5cccbd8a2d3fa06bea,ssh-hardening
+  - role: git+https://github.com/KEAOSolutions/ansible-ssh-hardening,366e2a98fdd594727da5e9b7d2e7a0e817268f32,ssh-hardening
   - role: git+https://github.com/KEAOSolutions/ansible-docker,0ee5b7707cbe814541524a3cd22730c318080633,docker
   - role: git+https://github.com/KEAOSolutions/ansible-virtualbox,7b387ae3a9770d3fc6485081c06335adc453ae9e,virtualbox
   - role: git+https://github.com/KEAOSolutions/ansible-role-firewall,19f7754b90db7b4018ae63d8fbbec48934bcb818,iptables
