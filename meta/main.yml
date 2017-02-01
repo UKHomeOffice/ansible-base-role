@@ -53,15 +53,15 @@ dependencies:
     when: "{{ os_desktop_enable }}" 
   - name: slack
     src: git+https://github.com/KEAOSolutions/ansible-role-slack
-    version: 0fd75ee566e06770bf9316e46660a9e318cd3bcd
+    version: 368ec57f9e5f0b61622a3236a20bef7d1141e868
     when: "{{ os_desktop_enable }}" 
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
-    version: 8347b1f9c0914107d49665ff13ff02cd7d8c7eff
+    version: 7d49b470bb99688d3bdccb6e53ca02f1e47d9c87
     when: "{{ os_desktop_enable }}" 
   - name: chrome
     src: git+https://github.com/UKHomeOffice/ansible-role-chrome
-    version: 370b0e7c31b953a46778520a5dea167c6263ec48
+    version: b2eb8ebf38ec720a68bae1b52c94786683820c58
     when: "{{ os_desktop_enable }}" 
   - name: awesome-wm
     src: git+https://github.com/UKHomeOffice/ansible-awesome-wm
