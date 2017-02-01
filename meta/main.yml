@@ -9,7 +9,7 @@ dependencies:
     version: 131e1b4b480b467211f9389b5a3de97368071aec
   - name: ssh-hardening
     src: git+https://github.com/KEAOSolutions/ansible-ssh-hardening
-    version: 366e2a98fdd594727da5e9b7d2e7a0e817268f32
+    version: 15df32322ceffb132ff74d5de781bf97b33dc61c
   - name: docker
     src: git+https://github.com/KEAOSolutions/ansible-docker
     version: 0ee5b7707cbe814541524a3cd22730c318080633
