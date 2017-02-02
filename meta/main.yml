@@ -12,7 +12,7 @@ dependencies:
     version: 15df32322ceffb132ff74d5de781bf97b33dc61c
   - name: docker
     src: git+https://github.com/KEAOSolutions/ansible-docker
-    version: 0ee5b7707cbe814541524a3cd22730c318080633
+    version: 323ee6b41930cb58380ba4a962af446bced9469e
   - name: virtualbox
     src: git+https://github.com/KEAOSolutions/ansible-virtualbox
     version: 7b387ae3a9770d3fc6485081c06335adc453ae9e
