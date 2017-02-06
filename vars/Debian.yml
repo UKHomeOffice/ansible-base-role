@@ -37,15 +37,6 @@ os_packages:
   - vim-scripts
   - zlib1g-dev
 
-os_packages_gui:
-  - pinentry-gtk2
-  - metacity-themes
-  - ubuntu-gnome-desktop
-  - network-manager-openvpn-gnome
-  - ykneomgr
-  - yubioath-desktop
-  - yubikey-personalization-gui
-
 os_banned_packages:
   - gnome-mines
   - aisleriot

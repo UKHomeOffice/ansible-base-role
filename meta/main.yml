@@ -31,43 +31,6 @@ dependencies:
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
     version: 7d49b470bb99688d3bdccb6e53ca02f1e47d9c87
-    when: os_desktop_enable == True 
-  - name: kubectl
-    src: git+https://github.com/UKHomeOffice/ansible-role-kubectl
-    version: 9be1196f8b9cf86038f54469372b5b1b2dbbf3a4
-    when: os_desktop_enable == True 
-  - name: virtualbox
-    src: git+https://github.com/KEAOSolutions/ansible-virtualbox
-    version: 7b387ae3a9770d3fc6485081c06335adc453ae9e
-    when: os_desktop_enable == True 
-  - name: sublime
-    src: git+https://github.com/UKHomeOffice/ansible-role-sublime
-    version: 3726595cc83231ccc06da4515911ecd4f533b609
-    when: os_desktop_enable == True 
-  - name: minikube
-    src: git+https://github.com/UKHomeOffice/ansible-role-minikube
-    version: d833e7958d6c9a12da8e694696ef53c018289cff
-    when: os_desktop_enable == True 
-  - name: packer
-    src: git+https://github.com/UKHomeOffice/ansible-packer
-    version: 96cd678b919d1309458b8366b99fd36e3eb41553
-    when: os_desktop_enable == True 
-  - name: vagrant
-    src: git+https://github.com/UKHomeOffice/ansible-role-vagrant
-    version: 3cbc91cca808c2ed54de99ad765b163e24b38cb9
-    when: os_desktop_enable == True 
-  - name: slack
-    src: git+https://github.com/KEAOSolutions/ansible-role-slack
-    version: 368ec57f9e5f0b61622a3236a20bef7d1141e868
-    when: os_desktop_enable == True 
-  - name: chrome
-    src: git+https://github.com/UKHomeOffice/ansible-role-chrome
-    version: b2eb8ebf38ec720a68bae1b52c94786683820c58
-    when: os_desktop_enable == True 
-  - name: awesome-wm
-    src: git+https://github.com/UKHomeOffice/ansible-awesome-wm
-    version: 061cb6ad82098bb194f0b142e618dd9e0ab0221e
-    when: os_desktop_enable == True and awesomewm == True
 
 galaxy_info:
   author: Mark Olliver

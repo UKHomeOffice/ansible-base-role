@@ -19,14 +19,6 @@
   with_items:
     - "{{ os_packages }}"
 
-- name: Install Generic Pre Reqs - RedHat GUI
-  yum:
-    name: "{{ item }}"
-    state: latest
-  with_items:
-    - "{{ os_packages_gui }}"
-  when: (os_desktop_enable and os_packages_gui)
-  
 - name: Install Generic Pre Reqs - RedHat6
   yum:
     name: "{{ item }}"
