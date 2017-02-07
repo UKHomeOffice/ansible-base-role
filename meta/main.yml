@@ -12,7 +12,7 @@ dependencies:
     version: 933e85c2a1845ed8b9f40bd33762e69c1381a032
   - name: ssh-hardening
     src: git+https://github.com/KEAOSolutions/ansible-ssh-hardening
-    version: 15df32322ceffb132ff74d5de781bf97b33dc61c
+    version: 94230c3d773b9812c41f871829a8180d96dde510
   - name: iptables
     src: git+https://github.com/KEAOSolutions/ansible-role-firewall
     version: 19f7754b90db7b4018ae63d8fbbec48934bcb818
