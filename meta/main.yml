@@ -30,10 +30,10 @@ dependencies:
     version: 80369365d8fa10066cbe6dc57b0156d1c58ba877
   - name: docker
     src: git+https://github.com/KEAOSolutions/ansible-docker
-    version: 5e5f7cec810c1a534a11f32bbb8a139fcb5e123c
+    version: f1d0277d4807b8dc1854272801521dedeeda7a35
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
-    version: 7d49b470bb99688d3bdccb6e53ca02f1e47d9c87
+    version: 602a33fc80aec9ac1eb9bbf5abf1ebe005b6e851
 
 galaxy_info:
   author: Mark Olliver
