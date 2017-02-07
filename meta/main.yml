@@ -9,7 +9,7 @@ dependencies:
     version: 285a065692a3e294ee90a08eab1a8e92e417df32
   - name: os-hardening
     src: git+https://github.com/KEAOSolutions/ansible-os-hardening
-    version: c40d61d19ca5ea5bf68db934495adfed1a5344b2
+    version: 933e85c2a1845ed8b9f40bd33762e69c1381a032
   - name: ssh-hardening
     src: git+https://github.com/KEAOSolutions/ansible-ssh-hardening
     version: 15df32322ceffb132ff74d5de781bf97b33dc61c
