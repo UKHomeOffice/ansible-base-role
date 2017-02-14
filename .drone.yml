@@ -9,7 +9,16 @@ pipeline:
       - docker build -t ansible-base .
     when:
       branch:
-      event: [tag]
+      event: [tag,push]
+
+  test_image:
+    image: ansible-base:${DOCKER_TAG}
+    environment:
+      - DOCKER_HOST=tcp://127.0.0.1:2375
+    commands:
+      - docker run --rm -t ansible-base:${DOCKER_TAG} ansible-playbook --syntax-check plays/base.yml -vvv
+    when:
+      event: [tag,push]
 
   image_to_quay:
     image: docker:1.11
