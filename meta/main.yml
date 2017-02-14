@@ -3,13 +3,13 @@
 dependencies:
   - name: package-management
     src:  git+https://github.com/UKHomeOffice/ansible-package-management
-    version: bcac6c6eecc639a07a486d0cce126fc902491704
+    version: c542c791c221cc225aa4398371cb0af8602c019b
   - name: audit-hardening
     src:  git+https://github.com/KEAOSolutions/ansible-audit-hardening
     version: 285a065692a3e294ee90a08eab1a8e92e417df32
   - name: os-hardening
     src: git+https://github.com/KEAOSolutions/ansible-os-hardening
-    version: 933e85c2a1845ed8b9f40bd33762e69c1381a032
+    version: 9d2bacc1a406eaa695e319f0d494f4ab9edaac2b
   - name: ssh-hardening
     src: git+https://github.com/KEAOSolutions/ansible-ssh-hardening
     version: 94230c3d773b9812c41f871829a8180d96dde510
@@ -30,7 +30,7 @@ dependencies:
     version: 80369365d8fa10066cbe6dc57b0156d1c58ba877
   - name: docker
     src: git+https://github.com/KEAOSolutions/ansible-docker
-    version: f1d0277d4807b8dc1854272801521dedeeda7a35
+    version: b3229191ee72b275fca1db3f1cce37c7e5981191
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
     version: c5242259155bc2723fd32989757aba91a4306a00
