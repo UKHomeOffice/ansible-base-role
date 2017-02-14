@@ -17,8 +17,8 @@ pipeline:
       - DOCKER_HOST=tcp://127.0.0.1:2375
     commands:
       - docker login -u="ukhomeofficedigital+dataplatform_bot" -p=${DOCKER_PASSWORD} quay.io
-      - docker tag ansible quay.io/ukhomeofficedigital/ansible-base:${DRONE_TAG}
-      - docker tag ansible quay.io/ukhomeofficedigital/ansible-base:latest
+      - docker tag ansible-base quay.io/ukhomeofficedigital/ansible-base:${DRONE_TAG}
+      - docker tag ansible-base quay.io/ukhomeofficedigital/ansible-base:latest
       - docker push quay.io/ukhomeofficedigital/ansible-base:${DRONE_TAG}
       - docker push quay.io/ukhomeofficedigital/ansible-base:latest
     when:
