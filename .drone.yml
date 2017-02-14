@@ -7,17 +7,16 @@ pipeline:
       - DOCKER_HOST=tcp://127.0.0.1:2375
     commands:
       - docker build -t ansible-base .
-      - docker tag ansible-base ansible-base:${DRONE_COMMIT_SHA}
     when:
       branch:
       event: [tag,push]
 
   test_image:
-    image: ansible-base:${DRONE_COMMIT_SHA}
+    image: docker:1.12
     environment:
       - DOCKER_HOST=tcp://127.0.0.1:2375
     commands:
-      - docker run --rm -t ansible-base:${DRONE_COMMIT_SHA} ansible-playbook --syntax-check plays/base.yml -vvv
+      - docker run --rm -t ansible-base ansible-playbook --syntax-check plays/base.yml -vvv
     when:
       event: [tag,push]
 
@@ -27,9 +26,11 @@ pipeline:
       - DOCKER_HOST=tcp://127.0.0.1:2375
     commands:
       - docker login -u="ukhomeofficedigital+dataplatform_bot" -p=${DOCKER_PASSWORD} quay.io
-      - docker tag ansible-base:${DRONE_COMMIT_SHA} quay.io/ukhomeofficedigital/ansible-base:${DRONE_TAG}
-      - docker tag ansible-base:${DRONE_COMMIT_SHA} quay.io/ukhomeofficedigital/ansible-base:latest
+      - docker tag ansible-base quay.io/ukhomeofficedigital/ansible-base:${DRONE_TAG}
+      - docker tag ansible-base quay.io/ukhomeofficedigital/ansible-base:${DRONE_COMMIT_SHA}
+      - docker tag ansible-base quay.io/ukhomeofficedigital/ansible-base:latest
       - docker push quay.io/ukhomeofficedigital/ansible-base:${DRONE_TAG}
+      - docker push quay.io/ukhomeofficedigital/ansible-base:${DRONE_COMMIT_SHA}
       - docker push quay.io/ukhomeofficedigital/ansible-base:latest
     when:
       event: [tag]
