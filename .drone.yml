@@ -12,7 +12,7 @@ pipeline:
       event: [tag,push]
 
   test_image:
-    image: ansible-base:${DOCKER_TAG}
+    image: ansible-base
     environment:
       - DOCKER_HOST=tcp://127.0.0.1:2375
     commands:
