@@ -1,4 +1,4 @@
-FROM quay.io/ukhomeofficedigital/ansible:v0.0.9
+FROM quay.io/ukhomeofficedigital/ansible:v0.0.10
 
 RUN mkdir -p /etc/ansible/roles /etc/ansible/plays
 COPY roles/* /etc/ansible/roles/
