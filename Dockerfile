@@ -17,13 +17,15 @@ ARG DRONE_BUILD_NUMBER
 # Create build identification
 RUN mkdir -p /etc/build \
     && \
-    echo "container: ansible-base-${DRONE_COMMIT_SHA}" > /etc/build/ansible-base \
+    echo "---"  > /etc/build/ansible-base \
     && \
-    echo "Build Date: ${DRONE_BUILD_CREATED}" >> /etc/build/ansible-base \
+    echo "container: ansible-base-${DRONE_COMMIT_SHA}" >> /etc/build/ansible-base \
     && \
-    echo "Build Number: ${DRONE_BUILD_NUMBER}" >> /etc/build/ansible-base \
+    echo "Build_Date: ${DRONE_BUILD_CREATED}" >> /etc/build/ansible-base \
     && \
-    echo "Repo Src: ${DRONE_REMOTE_URL}" >> /etc/build/ansible-base
+    echo "Build_Number: ${DRONE_BUILD_NUMBER}" >> /etc/build/ansible-base \
+    && \
+    echo "Repo_Src: ${DRONE_REMOTE_URL}" >> /etc/build/ansible-base
 
 
 # Container Labels
