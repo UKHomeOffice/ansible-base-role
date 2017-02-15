@@ -17,6 +17,9 @@ pipeline:
     environment:
       - DOCKER_HOST=tcp://127.0.0.1:2375
     commands:
+      - ls /etc/ansible
+      - ls /etc/ansible/plays
+      - ls /etc/ansible/roles
       - docker run --rm -t -e WORKDIR=/etc/ansible ansible-base ansible-playbook --syntax-check plays/base.yml -vvv
     when:
       event: [tag,push]
