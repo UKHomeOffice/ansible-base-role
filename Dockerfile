@@ -1,7 +1,4 @@
-ARG ANSIBLE_IMAGE
-ENV ANSIBLE_IMAGE ${ANSIBLE_IMAGE}
-
-FROM quay.io/ukhomeofficedigital/ansible:${ANSIBLE_IMAGE}
+FROM quay.io/ukhomeofficedigital/ansible:ANSIBLE_IMAGE
 
 RUN mkdir -p /etc/ansible/roles /etc/ansible/plays
 COPY roles/* /etc/ansible/roles/
