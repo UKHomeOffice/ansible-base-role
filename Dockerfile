@@ -3,7 +3,7 @@ FROM quay.io/ukhomeofficedigital/ansible:ANSIBLE_IMAGE
 RUN mkdir -p /etc/ansible/roles /etc/ansible/plays
 COPY roles/* /etc/ansible/roles/
 COPY plays/* /etc/ansible/plays/
-COPY requirements.yml /tmp/requirements.yml
+COPY requirements.yml /tmp/
 
 RUN ansible-galaxy install -vv -r /tmp/requirements.yml
 
@@ -24,7 +24,7 @@ ENV DRONE_BUILD_NUMBER ${DRONE_BUILD_NUMBER}
 # Create build identification
 RUN mkdir -p /etc/build \
     && \
-    echo "container: ansible-${DRONE_COMMIT_SHA}\nBuild Date: ${DRONE_BUILD_CREATED}\nBuild Number: ${DRONE_BUILD_NUMBER}\nRepo Src: ${DRONE_REMOTE_URL}" > /etc/build/ansible
+    echo "container: ansible-base-${DRONE_COMMIT_SHA}\nBuild Date: ${DRONE_BUILD_CREATED}\nBuild Number: ${DRONE_BUILD_NUMBER}\nRepo Src: ${DRONE_REMOTE_URL}" > /etc/build/ansible-base
 
 
 # Container Labels
