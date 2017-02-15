@@ -14,17 +14,16 @@ ARG DRONE_COMMIT_SHA
 ARG DRONE_BUILD_CREATED
 ARG DRONE_BUILD_NUMBER
 
-ENV DRONE_REPO_LINK ${DRONE_REPO_LINK}
-ENV DRONE_REMOTE_URL ${DRONE_REMOTE_URL}
-ENV DRONE_COMMIT_REF ${DRONE_COMMIT_REF}
-ENV DRONE_COMMIT_SHA ${DRONE_COMMIT_SHA}
-ENV DRONE_BUILD_CREATED ${DRONE_BUILD_CREATED}
-ENV DRONE_BUILD_NUMBER ${DRONE_BUILD_NUMBER}
-
 # Create build identification
 RUN mkdir -p /etc/build \
     && \
-    echo "container: ansible-base-${DRONE_COMMIT_SHA}\nBuild Date: ${DRONE_BUILD_CREATED}\nBuild Number: ${DRONE_BUILD_NUMBER}\nRepo Src: ${DRONE_REMOTE_URL}" > /etc/build/ansible-base
+    echo "container: ansible-base-${DRONE_COMMIT_SHA}" > /etc/build/ansible-base \
+    && \
+    echo "Build Date: ${DRONE_BUILD_CREATED}" >> /etc/build/ansible-base \
+    && \
+    echo "Build Number: ${DRONE_BUILD_NUMBER}" >> /etc/build/ansible-base \
+    && \
+    echo "Repo Src: ${DRONE_REMOTE_URL}" >> /etc/build/ansible-base
 
 
 # Container Labels
