@@ -8,7 +8,7 @@ pipeline:
     commands:
       - ls
       - sed -ri "s/ANSIBLE_IMAGE/${ANSIBLE_IMAGE=latest}/g" Dockerfile 
-      - docker build --build-arg DRONE_REPO_LINK=${DRONE_REPO_LINK} --build-arg DRONE_REPO_SCM=${DRONE_REPO_SCM} --build-arg DRONE_COMMIT_REF=${DRONE_COMMIT_REF} --build-arg DRONE_COMMIT_SHA=${DRONE_COMMIT_SHA} --build-arg DRONE_BUILD_CREATED=${DRONE_BUILD_CREATED} --build-arg DRONE_BUILD_NUMBER=${DRONE_BUILD_NUMBER} -t ansible-base .
+      - docker build --build-arg DRONE_REPO_LINK=${DRONE_REPO_LINK} --build-arg DRONE_REMOTE_URL=${DRONE_REMOTE_URL} --build-arg DRONE_COMMIT_REF=${DRONE_COMMIT_REF} --build-arg DRONE_COMMIT_SHA=${DRONE_COMMIT_SHA} --build-arg DRONE_BUILD_CREATED=${DRONE_BUILD_CREATED} --build-arg DRONE_BUILD_NUMBER=${DRONE_BUILD_NUMBER} -t ansible-base .
     when:
       branch:
       event: [tag,push]
