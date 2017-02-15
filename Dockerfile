@@ -42,4 +42,4 @@ LABEL \
   org.label-schema.version="${DRONE_BUILD_NUMBER}" \
   org.label-schema.license="MIT" \
   org.label-schema.docker.schema-version="1.0" \
-  org.label-schema.docker.cmd="docker run -it -rm --name quay.io/ukhomeofficedigital/ansible-base:latest -v environment:/etc/ansible/environment -v plays:/etc/ansible/plays -v roles:/etc/ansible/roles -v requirements.yml:/tmp/requirements.yml ansible ansible-playbook -i environment/xxx/hostfile play.yml -vv"
+  org.label-schema.docker.cmd="docker run -it -rm --name quay.io/ukhomeofficedigital/ansible-base:latest -v environment:/etc/ansible/environment -v plays:/etc/ansible/plays -v roles:/etc/ansible/roles -v requirements.yml:/tmp/requirements.yml ansible-base ansible-playbook -i environment/xxx/hostfile play.yml -vv"
