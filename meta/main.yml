@@ -3,7 +3,7 @@
 dependencies:
   - name: package-management
     src:  git+https://github.com/UKHomeOffice/ansible-package-management
-    version: 3d69dcc89ccc532fcab35a6494cde7991f681112
+    version: 8a0cbe2f886a58e520ea753f26f9f7e2cbb6c645
   - name: audit-hardening
     src:  git+https://github.com/KEAOSolutions/ansible-audit-hardening
     version: 285a065692a3e294ee90a08eab1a8e92e417df32
@@ -30,10 +30,10 @@ dependencies:
     version: 80369365d8fa10066cbe6dc57b0156d1c58ba877
   - name: docker
     src: git+https://github.com/KEAOSolutions/ansible-docker
-    version: b3229191ee72b275fca1db3f1cce37c7e5981191
+    version: b4851319dada060350218b781eae7bf8e32304b8
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
-    version: c5242259155bc2723fd32989757aba91a4306a00
+    version: 88f8620e800458fbab853bab3104a8662c26f98a
 
 galaxy_info:
   author: Mark Olliver
