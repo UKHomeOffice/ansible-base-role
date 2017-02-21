@@ -12,7 +12,7 @@ dependencies:
     version: 15df32322ceffb132ff74d5de781bf97b33dc61c
   - name: docker
     src: git+https://github.com/KEAOSolutions/ansible-docker
-    version: b4851319dada060350218b781eae7bf8e32304b8
+    version: 0ee5b7707cbe814541524a3cd22730c318080633
   - name: virtualbox
     src: git+https://github.com/KEAOSolutions/ansible-virtualbox
     version: 7b387ae3a9770d3fc6485081c06335adc453ae9e
@@ -57,7 +57,7 @@ dependencies:
     when: "{{ os_desktop_enable }}" 
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
-    version: 88f8620e800458fbab853bab3104a8662c26f98a
+    version: 7d49b470bb99688d3bdccb6e53ca02f1e47d9c87
     when: "{{ os_desktop_enable }}" 
   - name: chrome
     src: git+https://github.com/UKHomeOffice/ansible-role-chrome
