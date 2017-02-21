@@ -3,7 +3,7 @@
 dependencies:
   - name: package-management
     src:  git+https://github.com/UKHomeOffice/ansible-package-management
-    version: c542c791c221cc225aa4398371cb0af8602c019b
+    version: 3d69dcc89ccc532fcab35a6494cde7991f681112
   - name: audit-hardening
     src:  git+https://github.com/KEAOSolutions/ansible-audit-hardening
     version: 285a065692a3e294ee90a08eab1a8e92e417df32
