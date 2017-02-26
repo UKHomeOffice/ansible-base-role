@@ -1,4 +1,4 @@
-FROM quay.io/ukhomeofficedigital/ansible:ANSIBLE_IMAGE
+FROM quay.io/ukhomeofficedigital/terraform-data-platform:TERRAFORM_IMAGE
 
 RUN mkdir -p /etc/ansible/roles /etc/ansible/plays
 COPY roles/ /etc/ansible/roles/
