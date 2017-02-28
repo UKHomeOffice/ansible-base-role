@@ -5,6 +5,7 @@ os_packages:
   - apt-transport-https
   - bind9utils
   - dnsutils
+  - git-crypt
   - gnupg-pkcs11-scd
   - iwatch
   - iptables-persistent
@@ -28,6 +29,7 @@ os_packages:
   - shellcheck
   - strace
   - systemd-container
+  - tig
   - ubuntu-restricted-extras
   - virtualenv
   - whois
