@@ -32,3 +32,11 @@
     state: absent
   with_items:
     - "{{ os_banned_packages }}"
+
+- name: Add Yubikey udev rule
+  copy:
+    dest: /etc/udev/rules.d/70-u2f.rules
+    src: 70-u2f.rules
+    owner: root
+    group: root
+    mode: 0444

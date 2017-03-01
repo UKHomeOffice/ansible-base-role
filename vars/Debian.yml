@@ -11,6 +11,7 @@ os_packages:
   - iptables-persistent
   - kernel-package
   - libccid
+  - libu2f-host0
   - libpam-yubico
   - libreadline-dev
   - libykclient3
