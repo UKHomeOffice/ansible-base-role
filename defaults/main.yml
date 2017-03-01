@@ -22,6 +22,8 @@ generic_packages:
   - lvm2
   - lynx
   - ncdu
+  - network-manager-openvpn
+  - network-manager-openvpn-gnome
   - ngrep
   - nmap
   - ntp
