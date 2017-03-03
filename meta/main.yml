@@ -30,7 +30,7 @@ dependencies:
     version: 80369365d8fa10066cbe6dc57b0156d1c58ba877
   - name: docker
     src: git+https://github.com/KEAOSolutions/ansible-docker
-    version: ac02b50d4f8c725852433ae8dadf0a218c8645fd
+    version: ad88be969fdf9f58fb3fbd4a2ed9b42c7d9c6036
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
     version: 88f8620e800458fbab853bab3104a8662c26f98a
