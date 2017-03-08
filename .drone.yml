@@ -45,6 +45,18 @@ pipeline:
     when:
       event: [tag]
 
+  trigger_data_platform_terraform_drone_build:
+    image: quay.io/ukhomeofficedigital/drone-trigger:latest
+    drone_server: https://drone.digital.homeoffice.gov.uk
+    repo: UKHomeOffice/data_platform_terraform
+    branch: master
+    event: push
+    drone_token: ${DRONE_TOKEN}
+    when:
+      branch: master
+      event: [tag]
+
+
 services:
   dind:
     image: docker:1.11-dind
