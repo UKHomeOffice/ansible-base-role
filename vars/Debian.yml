@@ -5,11 +5,13 @@ os_packages:
   - apt-transport-https
   - bind9utils
   - dnsutils
+  - git-crypt
   - gnupg-pkcs11-scd
   - iwatch
   - iptables-persistent
   - kernel-package
   - libccid
+  - libu2f-host0
   - libpam-yubico
   - libreadline-dev
   - libykclient3
@@ -28,6 +30,7 @@ os_packages:
   - shellcheck
   - strace
   - systemd-container
+  - tig
   - ubuntu-restricted-extras
   - virtualenv
   - whois
@@ -36,15 +39,6 @@ os_packages:
   - yubico-piv-tool
   - vim-scripts
   - zlib1g-dev
-
-os_packages_gui:
-  - pinentry-gtk2
-  - metacity-themes
-  - ubuntu-gnome-desktop
-  - network-manager-openvpn-gnome
-  - ykneomgr
-  - yubioath-desktop
-  - yubikey-personalization-gui
 
 os_banned_packages:
   - gnome-mines

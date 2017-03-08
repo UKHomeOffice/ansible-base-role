@@ -1,39 +1,24 @@
 ---
 
 dependencies:
+  - name: package-management
+    src:  git+https://github.com/UKHomeOffice/ansible-package-management
+    version: 8a0cbe2f886a58e520ea753f26f9f7e2cbb6c645
   - name: audit-hardening
     src:  git+https://github.com/KEAOSolutions/ansible-audit-hardening
     version: 285a065692a3e294ee90a08eab1a8e92e417df32
   - name: os-hardening
     src: git+https://github.com/KEAOSolutions/ansible-os-hardening
-    version: 131e1b4b480b467211f9389b5a3de97368071aec
+    version: 9d2bacc1a406eaa695e319f0d494f4ab9edaac2b
   - name: ssh-hardening
     src: git+https://github.com/KEAOSolutions/ansible-ssh-hardening
-    version: 15df32322ceffb132ff74d5de781bf97b33dc61c
-  - name: docker
-    src: git+https://github.com/KEAOSolutions/ansible-docker
-    version: b4851319dada060350218b781eae7bf8e32304b8
-  - name: virtualbox
-    src: git+https://github.com/KEAOSolutions/ansible-virtualbox
-    version: 7b387ae3a9770d3fc6485081c06335adc453ae9e
+    version: 94230c3d773b9812c41f871829a8180d96dde510
   - name: iptables
     src: git+https://github.com/KEAOSolutions/ansible-role-firewall
     version: 19f7754b90db7b4018ae63d8fbbec48934bcb818
   - name: grub-cmdline
     src: git+https://github.com/KEAOSolutions/ansible-grub_cmdline
     version: 00b8874bd5131a4eee3b30da1fdb028445607e07
-  - name: sublime
-    src: git+https://github.com/UKHomeOffice/ansible-role-sublime
-    version: 3726595cc83231ccc06da4515911ecd4f533b609
-    when: "{{ os_desktop_enable }}" 
-  - name: minikube
-    src: git+https://github.com/UKHomeOffice/ansible-role-minikube
-    version: d833e7958d6c9a12da8e694696ef53c018289cff
-    when: "{{ os_desktop_enable }}" 
-  - name: kubectl
-    src: git+https://github.com/UKHomeOffice/ansible-role-kubectl
-    version: 9be1196f8b9cf86038f54469372b5b1b2dbbf3a4
-    when: "{{ os_desktop_enable }}" 
   - name: clamav
     src: git+https://github.com/KEAOSolutions/ansible-role-clamav
     version: 408e96f65dd5beb656b418dfb54f3c4c4c2f7751
@@ -43,30 +28,12 @@ dependencies:
   - name: openjdk
     src: git+https://github.com/KEAOSolutions/ansible-role-openjdk
     version: 80369365d8fa10066cbe6dc57b0156d1c58ba877
-  - name: packer
-    src: git+https://github.com/UKHomeOffice/ansible-packer
-    version: 96cd678b919d1309458b8366b99fd36e3eb41553
-    when: "{{ os_desktop_enable }}" 
-  - name: vagrant
-    src: git+https://github.com/UKHomeOffice/ansible-role-vagrant
-    version: 3cbc91cca808c2ed54de99ad765b163e24b38cb9
-    when: "{{ os_desktop_enable }}" 
-  - name: slack
-    src: git+https://github.com/KEAOSolutions/ansible-role-slack
-    version: 368ec57f9e5f0b61622a3236a20bef7d1141e868
-    when: "{{ os_desktop_enable }}" 
+  - name: docker
+    src: git+https://github.com/KEAOSolutions/ansible-docker
+    version: ad88be969fdf9f58fb3fbd4a2ed9b42c7d9c6036
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
     version: 88f8620e800458fbab853bab3104a8662c26f98a
-    when: "{{ os_desktop_enable }}" 
-  - name: chrome
-    src: git+https://github.com/UKHomeOffice/ansible-role-chrome
-    version: b2eb8ebf38ec720a68bae1b52c94786683820c58
-    when: "{{ os_desktop_enable }}" 
-  - name: awesome-wm
-    src: git+https://github.com/UKHomeOffice/ansible-awesome-wm
-    version: 061cb6ad82098bb194f0b142e618dd9e0ab0221e
-    when: "{{ os_desktop_enable }} and {{ awesomewm }}"
 
 galaxy_info:
   author: Mark Olliver

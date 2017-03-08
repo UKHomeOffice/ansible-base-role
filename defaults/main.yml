@@ -1,6 +1,4 @@
 ---
-os_desktop_enable: true
-
 generic_packages:
   - curl
   - acpid

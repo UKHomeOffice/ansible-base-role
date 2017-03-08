@@ -1,0 +1,54 @@
+---
+pipeline:
+  build_image:
+    privileged: true
+    image: docker:1.11
+    environment:
+      - DOCKER_HOST=tcp://127.0.0.1:2375
+    commands:
+      - sed -ri "s/ANSIBLE_IMAGE/${ANSIBLE_IMAGE=latest}/g" Dockerfile 
+      - docker build --build-arg DRONE_REPO_LINK=${DRONE_REPO_LINK} --build-arg DRONE_REMOTE_URL=${DRONE_REMOTE_URL} --build-arg DRONE_COMMIT_REF=${DRONE_COMMIT_REF} --build-arg DRONE_COMMIT_SHA=${DRONE_COMMIT_SHA} --build-arg DRONE_BUILD_CREATED=${DRONE_BUILD_CREATED} --build-arg DRONE_BUILD_NUMBER=${DRONE_BUILD_NUMBER} -t ansible-base .
+    when:
+      branch:
+      event: [tag,push]
+
+  test_image:
+    image: docker:1.11
+    environment:
+      - DOCKER_HOST=tcp://127.0.0.1:2375
+    commands:
+      - docker run --rm -t -e WORKDIR=/etc/ansible ansible-base ansible-playbook --syntax-check plays/base.yml -vvv
+    when:
+      event: [tag,push]
+
+  image_to_quay:
+    image: docker:1.11
+    environment:
+      - DOCKER_HOST=tcp://127.0.0.1:2375
+    commands:
+      - docker login -u="ukhomeofficedigital+dataplatform_bot" -p=${DOCKER_PASSWORD} quay.io
+      - docker tag ansible-base quay.io/ukhomeofficedigital/ansible-base:${DRONE_COMMIT_SHA}
+      - docker tag ansible-base quay.io/ukhomeofficedigital/ansible-base:latest
+      - docker push quay.io/ukhomeofficedigital/ansible-base:${DRONE_COMMIT_SHA}
+      - docker push quay.io/ukhomeofficedigital/ansible-base:latest
+    when:
+      event: [tag,push]
+
+  tag_to_quay:
+    image: docker:1.11
+    environment:
+      - DOCKER_HOST=tcp://127.0.0.1:2375
+    commands:
+      - docker login -u="ukhomeofficedigital+dataplatform_bot" -p=${DOCKER_PASSWORD} quay.io
+      - docker tag ansible-base quay.io/ukhomeofficedigital/ansible-base:${DRONE_TAG}
+      - docker push quay.io/ukhomeofficedigital/ansible-base:${DRONE_TAG}
+    when:
+      event: [tag]
+
+services:
+  dind:
+    image: docker:1.11-dind
+    privileged: true
+    command:
+      - "-s"
+      - "overlay"

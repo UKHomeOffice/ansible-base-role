@@ -1,0 +1,8 @@
+---
+- name: Setup centos ami user
+  user:
+    name: "centos"
+    comment: "user for ansible"
+    password: "*"
+    update_password: always
+    append: yes

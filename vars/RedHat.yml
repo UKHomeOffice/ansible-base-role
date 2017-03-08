@@ -30,7 +30,4 @@ os_packages:
 os_packages_conflicting_remove:
   - nfs-utils
 
-os_packages_gui:
-
-
 os_banned_packages:
