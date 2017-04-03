@@ -5,31 +5,31 @@ dependencies:
     src:  git+https://github.com/UKHomeOffice/ansible-package-management
     version: 8a0cbe2f886a58e520ea753f26f9f7e2cbb6c645
   - name: audit-hardening
-    src:  git+https://github.com/KEAOSolutions/ansible-audit-hardening
+    src:  git+https://github.com/UKHomeOffice/ansible-role-audit-hardening
     version: 285a065692a3e294ee90a08eab1a8e92e417df32
   - name: os-hardening
-    src: git+https://github.com/KEAOSolutions/ansible-os-hardening
+    src: git+https://github.com/UKHomeOffice/ansible-role-os-hardening
     version: 9d2bacc1a406eaa695e319f0d494f4ab9edaac2b
   - name: ssh-hardening
-    src: git+https://github.com/KEAOSolutions/ansible-ssh-hardening
+    src: git+https://github.com/UKHomeOffice/ansible-role-ssh-hardening
     version: 94230c3d773b9812c41f871829a8180d96dde510
   - name: iptables
-    src: git+https://github.com/KEAOSolutions/ansible-role-firewall
+    src: git+https://github.com/UKHomeOffice/ansible-role-firewall
     version: 19f7754b90db7b4018ae63d8fbbec48934bcb818
   - name: grub-cmdline
-    src: git+https://github.com/KEAOSolutions/ansible-grub_cmdline
+    src: git+https://github.com/UKHomeOffice/ansible-role-grub-cmdline
     version: 00b8874bd5131a4eee3b30da1fdb028445607e07
   - name: clamav
-    src: git+https://github.com/KEAOSolutions/ansible-role-clamav
+    src: git+https://github.com/UKHomeOffice/ansible-role-clamav
     version: 02ba5bf09d792c9902dee67006ae25985cf7fe30
   - name: fstab
-    src: git+https://github.com/KEAOSolutions/ansible-fstab.git
+    src: git+https://github.com/UKHomeOffice/ansible-role-fstab
     version: c1157ba82915a8937107db6d9ba3ae216ae3cf6d
   - name: openjdk
-    src: git+https://github.com/KEAOSolutions/ansible-role-openjdk
+    src: git+https://github.com/UKHomeOffice/ansible-role-openjdk
     version: 80369365d8fa10066cbe6dc57b0156d1c58ba877
   - name: docker
-    src: git+https://github.com/KEAOSolutions/ansible-docker
+    src: git+https://github.com/UKHomeOffice/ansible-role-docker
     version: ad88be969fdf9f58fb3fbd4a2ed9b42c7d9c6036
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
