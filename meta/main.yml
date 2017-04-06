@@ -21,7 +21,7 @@ dependencies:
     version: 00b8874bd5131a4eee3b30da1fdb028445607e07
   - name: clamav
     src: git+https://github.com/UKHomeOffice/ansible-role-clamav
-    version: 02ba5bf09d792c9902dee67006ae25985cf7fe30
+    version: 484a57a22be66e4987833841fb2de91953db5161 
   - name: fstab
     src: git+https://github.com/UKHomeOffice/ansible-role-fstab
     version: c1157ba82915a8937107db6d9ba3ae216ae3cf6d
