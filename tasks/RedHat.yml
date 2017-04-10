@@ -19,14 +19,6 @@
   with_items:
     - "{{ os_packages }}"
 
-- name: Install Generic Pre Reqs - RedHat6
-  yum:
-    name: "{{ item }}"
-    state: latest
-  with_items:
-    - "{{ redhat_packages_6 }}"
-  when: ansible_distribution_version <= '7'
-
 - name: Remove conflicting Packages - RedHat
   yum:
     name: "{{ item }}"
