@@ -27,7 +27,7 @@ dependencies:
     version: c1157ba82915a8937107db6d9ba3ae216ae3cf6d
   - name: openjdk
     src: git+https://github.com/UKHomeOffice/ansible-role-openjdk
-    version: 80369365d8fa10066cbe6dc57b0156d1c58ba877
+    version: 77f1586fc26633afef1a5ba6bb236e39d4f1f4e1
   - name: docker
     src: git+https://github.com/UKHomeOffice/ansible-role-docker
     version: ad88be969fdf9f58fb3fbd4a2ed9b42c7d9c6036
