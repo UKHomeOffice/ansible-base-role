@@ -43,7 +43,7 @@ pipeline:
       - docker tag ansible-base quay.io/ukhomeofficedigital/ansible-base:${DRONE_TAG}
       - docker push quay.io/ukhomeofficedigital/ansible-base:${DRONE_TAG}
     when:
-      event: [tag]
+      event: [tag,push]
 
   trigger_data_platform_terraform_drone_build:
     image: quay.io/ukhomeofficedigital/drone-trigger:latest
