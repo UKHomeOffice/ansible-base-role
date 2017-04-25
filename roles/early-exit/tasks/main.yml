@@ -1,3 +1,4 @@
+---
 - name: "check for previously completed run"
   stat:
     path: /tmp/ansible-base-play-complete
