@@ -49,6 +49,7 @@ pipeline:
     image: quay.io/ukhomeofficedigital/drone-trigger:latest
     drone_server: https://drone.digital.homeoffice.gov.uk
     repo: UKHomeOffice/data_platform_terraform
+    branch: master
     drone_token: ${DRONE_TOKEN}
     when:
       branch: master
