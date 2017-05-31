@@ -6,7 +6,7 @@ dependencies:
     version: 8a0cbe2f886a58e520ea753f26f9f7e2cbb6c645
   - name: audit-hardening
     src:  git+https://github.com/UKHomeOffice/ansible-role-audit-hardening
-    version: 715f3fac1bb9a696105830f6f9d47da09d572c31
+    version: 448b1cb4daee97c1402bcfe15e4bdda7e8a83dab
   - name: os-hardening
     src: git+https://github.com/UKHomeOffice/ansible-role-os-hardening
     version: 9d2bacc1a406eaa695e319f0d494f4ab9edaac2b
@@ -15,7 +15,7 @@ dependencies:
     version: 94230c3d773b9812c41f871829a8180d96dde510
   - name: iptables
     src: git+https://github.com/UKHomeOffice/ansible-role-firewall
-    version: 19f7754b90db7b4018ae63d8fbbec48934bcb818
+    version: d47e0ed05e35c16216644fb85cc74faad320e866
   - name: grub-cmdline
     src: git+https://github.com/UKHomeOffice/ansible-role-grub-cmdline
     version: 00b8874bd5131a4eee3b30da1fdb028445607e07
