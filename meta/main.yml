@@ -12,7 +12,7 @@ dependencies:
     version: 9d2bacc1a406eaa695e319f0d494f4ab9edaac2b
   - name: ssh-hardening
     src: git+https://github.com/UKHomeOffice/ansible-role-ssh-hardening
-    version: 94230c3d773b9812c41f871829a8180d96dde510
+    version: 0450ce0c42049b9d4f2850a9982609cde25a24f9
   - name: iptables
     src: git+https://github.com/UKHomeOffice/ansible-role-firewall
     version: d47e0ed05e35c16216644fb85cc74faad320e866
