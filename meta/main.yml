@@ -22,6 +22,7 @@ dependencies:
   - name: clamav
     src: git+https://github.com/UKHomeOffice/ansible-role-clamav
     version: 9c33996881d1751b6d494f316308f541bf13acfa
+    tags: usb
   - name: fstab
     src: git+https://github.com/UKHomeOffice/ansible-role-fstab
     version: f3929ec6198cd0ca4f84f783ea18705cab5b1e30
