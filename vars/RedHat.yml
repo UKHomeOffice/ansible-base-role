@@ -31,3 +31,5 @@ os_packages_conflicting_remove:
   - nfs-utils
 
 os_banned_packages:
+
+os_packages_notusb:

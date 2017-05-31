@@ -35,10 +35,12 @@ os_packages:
   - virtualenv
   - whois
   - yubikey-luks
-  - yubikey-ksm
   - yubico-piv-tool
   - vim-scripts
   - zlib1g-dev
+
+os_packages_notusb:
+  - yubikey-ksm
 
 os_banned_packages:
   - gnome-mines
