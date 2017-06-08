@@ -3,6 +3,8 @@
   command: /usr/bin/rkhunter --update
   notify: rkhunter propupd
   ignore_errors: true
+  tags: usb
 
 - name: rkhunter propupd
   command: /usr/bin/rkhunter --propupd
+  tags: usb

@@ -6,31 +6,32 @@ dependencies:
     version: 8a0cbe2f886a58e520ea753f26f9f7e2cbb6c645
   - name: audit-hardening
     src:  git+https://github.com/UKHomeOffice/ansible-role-audit-hardening
-    version: 285a065692a3e294ee90a08eab1a8e92e417df32
+    version: 448b1cb4daee97c1402bcfe15e4bdda7e8a83dab
   - name: os-hardening
     src: git+https://github.com/UKHomeOffice/ansible-role-os-hardening
     version: 9d2bacc1a406eaa695e319f0d494f4ab9edaac2b
   - name: ssh-hardening
     src: git+https://github.com/UKHomeOffice/ansible-role-ssh-hardening
-    version: 94230c3d773b9812c41f871829a8180d96dde510
+    version: 0450ce0c42049b9d4f2850a9982609cde25a24f9
   - name: iptables
     src: git+https://github.com/UKHomeOffice/ansible-role-firewall
-    version: 19f7754b90db7b4018ae63d8fbbec48934bcb818
+    version: d47e0ed05e35c16216644fb85cc74faad320e866
   - name: grub-cmdline
     src: git+https://github.com/UKHomeOffice/ansible-role-grub-cmdline
-    version: 00b8874bd5131a4eee3b30da1fdb028445607e07
+    version: 30cba0a8ada7a4cb844276c33a88a4af4bd199b1
   - name: clamav
     src: git+https://github.com/UKHomeOffice/ansible-role-clamav
-    version: 62492183628284c3010e3379c97c76369694bb32
+    version: fbaaf3067ad3541d1a0afe24f6961e23f7be2f36
+    tags: usb
   - name: fstab
     src: git+https://github.com/UKHomeOffice/ansible-role-fstab
-    version: c1157ba82915a8937107db6d9ba3ae216ae3cf6d
+    version: f3929ec6198cd0ca4f84f783ea18705cab5b1e30
   - name: openjdk
     src: git+https://github.com/UKHomeOffice/ansible-role-openjdk
     version: 77f1586fc26633afef1a5ba6bb236e39d4f1f4e1
   - name: docker
     src: git+https://github.com/UKHomeOffice/ansible-role-docker
-    version: ad88be969fdf9f58fb3fbd4a2ed9b42c7d9c6036
+    version: 2f9c3b930d4526f304f3c64d6d48230df32284da
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
     version: 88f8620e800458fbab853bab3104a8662c26f98a
