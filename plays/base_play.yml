@@ -1,6 +1,5 @@
 ---
 - hosts: "{{ variable_host | default('centos') }}"
-  strategy: free
   gather_facts: yes
   roles:
     - { role: early-exit }
