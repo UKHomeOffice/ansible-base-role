@@ -2,7 +2,6 @@
 - hosts: "{{ variable_host | default('centos') }}"
   gather_facts: yes
   roles:
-    - { role: early-exit }
     - { role: ami }
     - { role: package-management }
     - { role: generic }
@@ -11,5 +10,3 @@
         os_security_packages_list: ['xinetd','inetd','ypserv','telnet-server','rsh-server'] }
     - { role: ssh-hardening }
     - { role: audit-hardening }
-    - { role: early-exit,
-        mark_run_complete: true }
