@@ -10,3 +10,8 @@
         os_security_packages_list: ['xinetd','inetd','ypserv','telnet-server','rsh-server'] }
     - { role: ssh-hardening }
     - { role: audit-hardening }
+
+- hosts: hadoop_ambari_nodes
+  gather_facts: yes
+  roles:
+    - { role: base-role-fixes }
