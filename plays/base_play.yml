@@ -10,3 +10,4 @@
         os_security_packages_list: ['xinetd','inetd','ypserv','telnet-server','rsh-server'] }
     - { role: ssh-hardening }
     - { role: audit-hardening }
+    - { role: base-role-fixes }
