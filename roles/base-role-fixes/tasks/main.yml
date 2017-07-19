@@ -1,0 +1,7 @@
+---
+- name: Remove Blacklist kernel modules
+  kernel_blacklist:
+    name: "{{ item }}"
+    state: absent
+  with_items:
+    - "{{ kernel_blacklist_modules }}"
