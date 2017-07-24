@@ -1,3 +1,0 @@
----
-kernel_blacklist_modules:
-  - ipv6
