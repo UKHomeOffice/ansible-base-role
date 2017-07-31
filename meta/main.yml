@@ -34,7 +34,7 @@ dependencies:
     version: 2f9c3b930d4526f304f3c64d6d48230df32284da
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
-    version: 88f8620e800458fbab853bab3104a8662c26f98a
+    version: d00bae6955d68873eb888a4738c847af5924d086
 
 galaxy_info:
   author: Mark Olliver
