@@ -7,6 +7,8 @@ os_packages:
   - dnsutils
   - git-crypt
   - gnupg-pkcs11-scd
+  - gnupg
+  - gnupg2
   - iwatch
   - iptables-persistent
   - kernel-package
