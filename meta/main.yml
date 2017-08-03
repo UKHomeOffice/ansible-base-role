@@ -9,13 +9,13 @@ dependencies:
     version: 448b1cb4daee97c1402bcfe15e4bdda7e8a83dab
   - name: os-hardening
     src: git+https://github.com/UKHomeOffice/ansible-role-os-hardening
-    version: 9d2bacc1a406eaa695e319f0d494f4ab9edaac2b
+    version: abcc5102c948e87ccb7a06e7d10b5227ece0374f
   - name: ssh-hardening
     src: git+https://github.com/UKHomeOffice/ansible-role-ssh-hardening
     version: 0450ce0c42049b9d4f2850a9982609cde25a24f9
   - name: iptables
     src: git+https://github.com/UKHomeOffice/ansible-role-firewall
-    version: d47e0ed05e35c16216644fb85cc74faad320e866
+    version: 4c90b4015265644e6f499f67d688798e9c4d0699
   - name: grub-cmdline
     src: git+https://github.com/UKHomeOffice/ansible-role-grub-cmdline
     version: 30cba0a8ada7a4cb844276c33a88a4af4bd199b1
@@ -31,7 +31,7 @@ dependencies:
     version: 77f1586fc26633afef1a5ba6bb236e39d4f1f4e1
   - name: docker
     src: git+https://github.com/UKHomeOffice/ansible-role-docker
-    version: 2f9c3b930d4526f304f3c64d6d48230df32284da
+    version: 4e44ee5c78fd9fb8cfa29497e3bc6698da026f39
   - name: sysdig
     src: git+https://github.com/UKHomeOffice/ansible-sysdig
     version: 88f8620e800458fbab853bab3104a8662c26f98a
