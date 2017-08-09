@@ -15,7 +15,7 @@ dependencies:
     version: 0450ce0c42049b9d4f2850a9982609cde25a24f9
   - name: iptables
     src: git+https://github.com/UKHomeOffice/ansible-role-firewall
-    version: 8950e26638e105f0925d528e878826e80c1edbae
+    version: da6eeadd878c7df9f16bbd1b17c4e6d07cb577d1
   - name: grub-cmdline
     src: git+https://github.com/UKHomeOffice/ansible-role-grub-cmdline
     version: 30cba0a8ada7a4cb844276c33a88a4af4bd199b1
