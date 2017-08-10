@@ -32,7 +32,6 @@
     state: latest
   with_items:
     - "{{ os_packages_notusb }}"
-  tags: usb
 
 - name: Remove Banned Packages
   apt:

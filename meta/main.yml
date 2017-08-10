@@ -2,36 +2,20 @@
 
 dependencies:
   - name: package-management
-    src:  git+https://github.com/UKHomeOffice/ansible-package-management
-    version: 8a0cbe2f886a58e520ea753f26f9f7e2cbb6c645
   - name: audit-hardening
-    src:  git+https://github.com/UKHomeOffice/ansible-role-audit-hardening
-    version: 448b1cb4daee97c1402bcfe15e4bdda7e8a83dab
   - name: os-hardening
-    src: git+https://github.com/UKHomeOffice/ansible-role-os-hardening
-    version: 9d2bacc1a406eaa695e319f0d494f4ab9edaac2b
+    os_desktop_enable: true,
+    os_security_packages_list: ['xinetd','inetd','ypserv','telnet-server','rsh-server']
+    tags: usb
   - name: ssh-hardening
-    src: git+https://github.com/UKHomeOffice/ansible-role-ssh-hardening
-    version: 0450ce0c42049b9d4f2850a9982609cde25a24f9
   - name: iptables
-    src: git+https://github.com/UKHomeOffice/ansible-role-firewall
-    version: d47e0ed05e35c16216644fb85cc74faad320e866
   - name: grub-cmdline
-    src: git+https://github.com/UKHomeOffice/ansible-role-grub-cmdline
-    version: 30cba0a8ada7a4cb844276c33a88a4af4bd199b1
+    grub_admin_password: 'grub.pbkdf2.sha512.10000.B3B4783ACF1A3C923EFDF0AD6591BA3DECBFB5FAEE1BEB53D4B84AC129466C53A5BB3E4B37DBB6B527C0B2D3A737D51D993FA54FDF5D02AF9EABD3604A364CB4.7729E46C8B4C5F272370748DCE9F4F07396297F3BE287D727D8E9684868A54177FCD95C99BDFDAA9FE94E773ED4CA42553030C250093E9D69D9A11D2C44C3CE7'
   - name: clamav
-    src: git+https://github.com/UKHomeOffice/ansible-role-clamav
-    version: fbaaf3067ad3541d1a0afe24f6961e23f7be2f36
     tags: usb
   - name: openjdk
-    src: git+https://github.com/UKHomeOffice/ansible-role-openjdk
-    version: 77f1586fc26633afef1a5ba6bb236e39d4f1f4e1
   - name: docker
-    src: git+https://github.com/UKHomeOffice/ansible-role-docker
-    version: 2f9c3b930d4526f304f3c64d6d48230df32284da
   - name: sysdig
-    src: git+https://github.com/UKHomeOffice/ansible-sysdig
-    version: d00bae6955d68873eb888a4738c847af5924d086
 
 galaxy_info:
   author: Mark Olliver
