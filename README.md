@@ -1,5 +1,9 @@
-# Base Ansible Role 
+# DEPRECATED
 
-This role is a generic install role, that pulls in upstream meta roles. It is intended to be called via an upstream meta process which contains the environment specific roles
+This code is no longer required by our team. Active development has been stopped and this repository is no longer being maintained.
 
-This repo is configured with a test build docker container pushing to Quay via an automated drone CI server
+The last good commit is 5a96adabd46c4fb437673f0a7d4a3819a85ad157
+
+## Dependent Ansible Galaxy Repositories
+
+The dependent Ansible Galaxy repositories required by this role are also deprecated and unmaintained.
